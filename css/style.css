@@ -1,0 +1,229 @@
+body {
+  font-family: "Montserrat";
+  background-color: white;
+}
+
+.button-group button{
+  background: transparent;
+  border: none;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 130px;
+}
+
+.button-group button+button{
+  padding-left: 3rem;
+}
+
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active{
+  outline: 0!important;
+  box-shadow: none!important;
+}
+
+.about-area{
+  margin-left: 8rem;
+}
+
+.heading3{
+  font-size: 3rem;
+}
+
+.container-fluid{
+  margin-bottom: 4rem;
+}
+
+.card{
+  border-bottom: 8px solid  #0275d8;
+}
+
+.container{
+  margin-bottom: 3rem;
+}
+
+.contact{
+  padding-left: 8rem;
+  padding-right: 8rem;
+  background-color: #6fe7dd;
+}
+
+.icon-box{
+text-align: center;
+}
+
+.title{
+  font-size: 4rem;
+}
+
+.sub-title{
+  font-size: 1.5rem;
+}
+
+.greetings {
+  padding-top: 13%;
+  padding-left: 5rem;
+}
+
+.header-area{
+  background-color: #6fe7dd;
+}
+
+.navbar-brand {
+  padding: 0 2rem 0 1rem;
+  font-size: 2rem;
+}
+
+.navbar {
+  padding: 1rem 7.7rem;
+}
+
+.nav-item {
+  font-family: "Montserrat";
+  font-weight: 500;
+  padding: 1.7rem;
+  color: black;
+}
+
+.navbar-nav a:hover {
+  color: #000066;
+font-weight: 700;
+}
+
+.profile-image{
+    padding:2rem 5rem;
+
+}
+
+.project-area{
+  margin-left: 8rem;
+  margin-right: 8rem;
+
+}
+
+.project-images{
+  border-radius: 5%;
+}
+
+
+.site-banner{
+    background-color: #6fe7dd;
+}
+
+.social-icons{
+  width: 9rem;
+font-size: 4rem;
+color: #0275d8;
+}
+
+.skills{
+  padding-left: 8rem;
+  padding-right: 8rem;
+    background-color: #6fe7dd;
+}
+
+.fbutton{
+  background-color:  #6fe7dd;
+  color: black;
+}
+.tbutton{
+  background-color:   #ff4c68;
+}
+.dbutton{
+  background-color: #393E46;
+}
+.drbutton{
+  background-color: grey;
+}
+.dabutton{
+  background-color: black;
+}
+
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 50%; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+
+@media (max-width:1080px) {
+  .navbar{
+    padding: 4%;
+    margin: 0;
+  }
+  .nav-link{
+    text-align: center;
+  }
+  .site-main{
+    font-size: 3rem;
+  text-align: center;
+  }
+  .about-area{
+    align-items: center;
+    margin: 0;
+  }
+  ul{
+    font-size: 3rem;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: left;
+  }
+  .currently{
+    font-size: 3rem;
+    margin-left: 220px;
+    text-align: left;
+  }
+  .deeply{
+    font-size: 3rem;
+    margin-left: 220px;
+    text-align: left;
+    margin-right: 200px;
+  }
+  .hey{
+    font-size: 3.3rem;
+  }
+  #myBtn {
+    font-size: 70px;
+    padding-bottom: 7rem;
+    height: 100px;
+    width: 100px;
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: black; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+
+    border-radius: 50%; /* Rounded corners */
+
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+
+
+}
