@@ -210,15 +210,13 @@ color: #0275d8;
   }
   ul{
     font-size: 3rem;
-    margin-left: 200px;
-    margin-right: 200px;
+   
     text-align: left;
    padding-left: 13%
   }
   .currently{
     font-size: 3rem;
-    margin-left: 220px;
-   
+    
   }
   .deeply{
     font-size: 3rem;
