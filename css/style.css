@@ -5,6 +5,7 @@ html{
 body {
   font-family: "Montserrat";
   background-color: white;
+  
 }
 
 .button-group button{
@@ -177,10 +178,25 @@ color: #0275d8;
 
 
 @media (max-width:1080px) {
+
+  body{
+    text-align: center;
+  }
+
   .navbar{
     padding: 4%;
     margin: 0;
   }
+  .navbar-brand {
+  padding: 0 2rem 0 1rem;
+  font-size: 3rem;
+}
+ .navbar-toggler .navbar-toggler-icon{
+   
+  width: 80px !important;
+  height:60px !important;
+
+ }
   .nav-link{
     text-align: center;
   }
@@ -194,20 +210,19 @@ color: #0275d8;
   }
   ul{
     font-size: 3rem;
-    margin-left: 200px;
-    margin-right: 200px;
+   
     text-align: left;
+   padding-left: 13%
   }
   .currently{
     font-size: 3rem;
-    margin-left: 220px;
-    text-align: left;
+    
   }
   .deeply{
     font-size: 3rem;
-    margin-left: 220px;
-    text-align: left;
-    margin-right: 200px;
+    
+   
+    
   }
   .hey{
     font-size: 3.3rem;
