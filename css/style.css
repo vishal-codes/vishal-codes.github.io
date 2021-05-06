@@ -128,11 +128,6 @@ color: #0275d8;
   padding-right: 8rem;
     background-color: #6fe7dd;
 }
-
-.fbutton{
-  background-color:  #6fe7dd;
-  color: black;
-}
 .tbutton{
   background-color:   #ff4c68;
 }
@@ -147,7 +142,14 @@ color: #0275d8;
 }
 .simonbutton{
   background-color:  #011F3F;
-
+}
+.jobutton{
+  background-color: #45badd ;
+  color: black;
+}
+.qubutton{
+  background-color: white;
+  color: black;
 }
 .card:hover{
      transform: scale(1.05);
