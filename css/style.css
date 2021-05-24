@@ -1,14 +1,13 @@
-html{
+html {
   scroll-behavior: smooth;
 }
 
 body {
   font-family: "Montserrat";
   background-color: white;
-  
 }
 
-.button-group button{
+.button-group button {
   background: transparent;
   border: none;
   font-weight: 500;
@@ -16,54 +15,53 @@ body {
   line-height: 130px;
 }
 
-.button-group button+button{
+.button-group button + button {
   padding-left: 3rem;
 }
 
 button:focus,
-button:active
-button:hover
-.btn:active,
-.btn.active{
-  outline: 0!important;
-  box-shadow: none!important;
+button:active button:hover .btn:active,
+.btn.active {
+  outline: 0 !important;
+  box-shadow: none !important;
 }
 
-.about-area{
+.about-area {
   margin-left: 8rem;
 }
 
-.heading3{
+.heading3 {
   font-size: 3rem;
 }
 
-.container-fluid{
+.container-fluid {
   margin-bottom: 4rem;
 }
 
-.card{
-  border-bottom: 8px solid  #0275d8;
+.card {
+  border-bottom: 8px solid #0275d8;
+  border-radius: 10px;
 }
 
-.container{
+.container {
   margin-bottom: 3rem;
 }
 
-.contact{
+.contact {
   padding-left: 8rem;
   padding-right: 8rem;
   background-color: #6fe7dd;
 }
 
-.icon-box{
-text-align: center;
+.icon-box {
+  text-align: center;
 }
 
-.title{
+.title {
   font-size: 4rem;
 }
 
-.sub-title{
+.sub-title {
   font-size: 1.5rem;
 }
 
@@ -72,7 +70,7 @@ text-align: center;
   padding-left: 5rem;
 }
 
-.header-area{
+.header-area {
   background-color: #6fe7dd;
 }
 
@@ -94,68 +92,64 @@ text-align: center;
 
 .navbar-nav a:hover {
   color: #000066;
-font-weight: 700;
+  font-weight: 700;
 }
 
-.profile-image{
-    padding:2rem 5rem;
-
+.profile-image {
+  padding: 2rem 5rem;
 }
 
-.project-area{
+.project-area {
   margin-left: 8rem;
   margin-right: 8rem;
-
 }
 
-.project-images{
+.project-images {
   border-radius: 5%;
 }
 
-
-.site-banner{
-    background-color: #6fe7dd;
+.site-banner {
+  background-color: #6fe7dd;
 }
 
-.social-icons{
+.social-icons {
   width: 9rem;
-font-size: 4rem;
-color: #0275d8;
+  font-size: 4rem;
+  color: #0275d8;
 }
 
-.skills{
+.skills {
   padding-left: 8rem;
   padding-right: 8rem;
-    background-color: #6fe7dd;
+  background-color: #6fe7dd;
 }
-.tbutton{
-  background-color:   #ff4c68;
+.tbutton {
+  background-color: #ff4c68;
 }
-.dbutton{
-  background-color: #393E46;
+.dbutton {
+  background-color: #393e46;
 }
-.drbutton{
+.drbutton {
   background-color: grey;
 }
-.dabutton{
+.dabutton {
   background-color: black;
 }
-.simonbutton{
-  background-color:  #011F3F;
+.simonbutton {
+  background-color: #011f3f;
 }
-.jobutton{
-  background-color: #45badd ;
+.jobutton {
+  background-color: #45badd;
   color: black;
 }
-.qubutton{
+.qubutton {
   background-color: white;
   color: black;
 }
-.card:hover{
-     transform: scale(1.05);
+.card:hover {
+  transform: scale(1.05);
   box-shadow: 0 10px 20px grey, 0 4px 8px grey;
 }
-
 
 #myBtn {
   display: none; /* Hidden by default */
@@ -169,64 +163,57 @@ color: #0275d8;
   color: white; /* Text color */
   cursor: pointer; /* Add a mouse pointer on hover */
   padding: 15px; /* Some padding */
+  height: 50px;
+  width: 50px;
   border-radius: 50%; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  font-size: 25px; /* Increase font size */
 }
 
 #myBtn:hover {
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-
-
-@media (max-width:1080px) {
-
-  body{
+@media (max-width: 1080px) {
+  body {
     text-align: center;
   }
 
-  .navbar{
+  .navbar {
     padding: 4%;
     margin: 0;
   }
   .navbar-brand {
-  padding: 0 2rem 0 1rem;
-  font-size: 3rem;
-}
- .navbar-toggler .navbar-toggler-icon{
-   
-  width: 80px !important;
-  height:60px !important;
-
- }
-  .nav-link{
+    padding: 0 2rem 0 1rem;
+    font-size: 3rem;
+  }
+  .navbar-toggler .navbar-toggler-icon {
+    width: 80px !important;
+    height: 60px !important;
+  }
+  .nav-link {
     text-align: center;
   }
-  .site-main{
+  .site-main {
     font-size: 3rem;
-  text-align: center;
+    text-align: center;
   }
-  .about-area{
+  .about-area {
     align-items: center;
     margin: 0;
   }
-  ul{
+  ul {
     font-size: 3rem;
-   
+
     text-align: left;
-   padding-left: 13%
+    padding-left: 13%;
   }
-  .currently{
+  .currently {
     font-size: 3rem;
-    
   }
-  .deeply{
+  .deeply {
     font-size: 3rem;
-    
-   
-    
   }
-  .hey{
+  .hey {
     font-size: 3.3rem;
   }
   #myBtn {
@@ -246,13 +233,9 @@ color: #0275d8;
     cursor: pointer; /* Add a mouse pointer on hover */
 
     border-radius: 50%; /* Rounded corners */
-
   }
 
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
-
-
-
 }
