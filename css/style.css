@@ -166,7 +166,7 @@ button:active button:hover .btn:active,
   height: 50px;
   width: 50px;
   border-radius: 50%; /* Rounded corners */
-  font-size: 25px; /* Increase font size */
+  font-size: 23px; /* Increase font size */
   text-align: center;
 }
 
@@ -217,7 +217,7 @@ button:active button:hover .btn:active,
   .hey {
     font-size: 3.3rem;
   }
-  
+
   #myBtn:hover {
     background-color: #555; /* Add a dark-grey background on hover */
   }
