@@ -174,7 +174,7 @@ button:active button:hover .btn:active,
   background-color: #555; /* Add a dark-grey background on hover */
 }
 
-@media (max-width: 1080px) {
+@media (max-width: 1000px) {
   body {
     text-align: center;
   }
