@@ -178,10 +178,7 @@ button:active button:hover .btn:active,
   body {
     text-align: center;
   }
-  .card{
-    margin-left: 210px;
-    width: 29rem;
-  }
+  
   .navbar {
     padding: 4%;
     margin: 0;
