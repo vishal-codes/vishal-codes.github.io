@@ -80,7 +80,7 @@ button:active button:hover .btn:active,
 }
 
 .navbar {
-  padding: 1rem 7.7rem;
+  padding: 1rem 7.3rem;
 }
 
 .nav-item {
@@ -178,7 +178,10 @@ button:active button:hover .btn:active,
   body {
     text-align: center;
   }
-
+  .card{
+    margin-left: 210px;
+    width: 29rem;
+  }
   .navbar {
     padding: 4%;
     margin: 0;
