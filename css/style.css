@@ -127,7 +127,9 @@ button:active button:hover .btn:active,
 .githubicon:hover{
   color: #b700ff;
 }
-
+.emailicon{
+padding-right: 0;
+}
 .emailicon:hover{
   background: -moz-linear-gradient(50deg, #0077ff 4%, #f00024 25%, #ffe600 50%, #04fa39 75%, #0077ff 90%); 
   background: -webkit-linear-gradient(50deg, #0077ff 4%,#f00024 25%,#ffe600 50%,#04fa39 75%,#0077ff 90%); 
@@ -224,18 +226,25 @@ button:active button:hover .btn:active,
   }
   ul {
     font-size: 3rem;
-
     text-align: left;
     padding-left: 13%;
   }
   .currently {
     font-size: 3rem;
   }
+
   .deeply {
     font-size: 3rem;
   }
   .hey {
     font-size: 3.3rem;
+  }
+  .contact{
+    text-align: center;
+  }
+  .social-icons {
+    font-size: 4rem;
+    margin-right: 20px;
   }
 
   #myBtn {
