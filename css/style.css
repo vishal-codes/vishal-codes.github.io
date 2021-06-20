@@ -113,9 +113,29 @@ button:active button:hover .btn:active,
 }
 
 .social-icons {
-  width: 9rem;
-  font-size: 4rem;
+  font-size: 3.5rem;
+  margin-right: 5rem;
+  color: #000000;
+}
+
+.social-icons:hover{
+  transform: scale(1.2) rotateY(360deg);
+  transition: 1s;
   color: #0275d8;
+}
+
+.githubicon:hover{
+  color: #b700ff;
+}
+
+.emailicon:hover{
+  background: -moz-linear-gradient(50deg, #0077ff 4%, #f00024 25%, #ffe600 50%, #04fa39 75%, #0077ff 90%); 
+  background: -webkit-linear-gradient(50deg, #0077ff 4%,#f00024 25%,#ffe600 50%,#04fa39 75%,#0077ff 90%); 
+  background: linear-gradient(50deg, #0077ff 4%,#f00024 25%,#ffe600 50%,#04fa39 75%,#0077ff 90%); 
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f00024', endColorstr='#04fa39',GradientType=1 );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 .skills {
