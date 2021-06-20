@@ -119,7 +119,7 @@ button:active button:hover .btn:active,
 }
 
 .social-icons:hover{
-  transform: scale(1.2) rotateY(360deg);
+  transform: scale(1.3) rotateY(360deg);
   transition: 1s;
   color: #0275d8;
 }
