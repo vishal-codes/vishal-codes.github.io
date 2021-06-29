@@ -1,288 +1,160 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Vishal Shinde</title>
-  <link rel="icon" href="favicon.ico" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+    <!-- TITLE & FAVICON -->
+    <title>Vishal Shinde</title>
+    <link rel="icon" href="favicon.ico" />
+    
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/341052e332.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 
-  <link rel="preconnect" href="https://fonts.gstatic.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
     rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
-  <link rel="stylesheet" href="css/style.css" />
-
-  <script src="https://kit.fontawesome.com/341052e332.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-  <header class="header-area" id="home">
-    <div class="main-menu">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"> <i class="fas fa-code"></i></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="mr-auto"></div>
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="#abouts">About Me<span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skillss">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projectss">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contactss">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
+  <body>
 
-  <main class="site-main">
-    <section class="site-banner">
-      <div class="container">
-        <div class="row">
-          <div class="greetings col-lg-6 col-md-12 site-title">
-            <h3 class="title-text"></h3>
-            <h1 class="title">Vishal Shinde.</h1>
-            <h5 class="sub-title">&nbsp; A keen learner</h5>
-          </div>
-          <div class="profile-image col-lg-6 col-md-12" style="margin-bottom: 150px">
-            <img src=" images/me1.png" alt="profile-picture" />
-          </div>
-        </div>
+    <!-- NAVBAR  -->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check">
+        <i class="fas fa-bars  burger" id="btn"></i>
+        <i class="fas fa-times burger" id="cancel"></i>
+      </label>
+      <img class="logo" src="images\logo.png" alt="Logo">
+      <ul class="u-list">
+        <li ><a class="list-items" href="#about">About</a></li>
+        <li ><a class="list-items" href="#skills">Skills</a></li>
+        <li ><a class="list-items" href="#projects">Projects</a></li>
+        <li ><a class="list-items" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- NAME -->
+    <div class="name-container" >
+       <div >
+         <br>
+          <img class="my-img" src="images\me1.png" alt="">
+       </div>  
+       <div class="name-div">
+        <h3 class="name" >Vishal Shinde </h3>
+        <p style="font-size: 20px;color: rgb(13, 13, 109); "> &nbsp;&nbsp; A keen learner</p>
       </div>
-    </section>
+    </div>
 
-    <section class="about-area" id="abouts">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-lg-6 col-md-12">
-            <div>
-              <h3 class="heading3" style="text-decoration: underline">
-                ABOUT ME
-              </h3>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12">
-          <br /><br />
-          <h3 class="hey"><b>Hello !</b></h3>
-          <br />
-          <p class="currently" style="margin-bottom: 5px">
-            My name is Vishal. Currently I'm-
-          </p>
-          <ul>
-            <li>
-              in my freshman year pursuing Bachelors in Computer Science &
-              Engineering from India🎓.
-            </li>
-            <li>
-              🛠️working on improving my Frontend Web Development Skills.
-            </li>
+    <!-- ABOUT ME -->
+    <div id="about" class="about-container">
+         <div style="line-height: 7mm;">
+          <p class="heading">ABOUT &nbsp;ME </p>
+          <p class="f35">Hello! </p>
+          <p class="f22">My name is Vishal. Currently I am -</p>
+          <ul class="description" >
+            <li>in my freshman year pursuing Bachelors in Computer Science &  Engineering from India🎓.</li>
+            <li>🛠️working on improving my Frontend Web Development Skills.</li>
             <li>learning Data Structures & Algorithms with Java🌱</li>
             <li>🌐eager to join various Student Community Programs.</li>
           </ul>
-          <p class="deeply">
+          <p class="description">
             I am deeply passionate about software development & innovations &
-            I also firmly believe in the power of the community. I have
-            arranged various sessions in my college to make students aware
-            about the community and the tech industry.
+            I also firmly believe in the power of the community. I have arranged various
+            sessions in my college to make students aware of the community and about the advancements in technology. <br>
+            In my free time you can find me with my <a href="https://drive.google.com/drive/folders/1mqxd4jkRt-MrOI_HCEWbhAH1e664Ij1q?usp=sharing" style="text-decoration: underline dotted rgb(0, 0, 0) 3px;">📷</a>&nbsp;pointing towards 🌄 🌅 🌉
           </p>
-        </div>
+         </div>        
+    </div>
+
+    <!-- SKILLS -->
+    
+    <div class="main-skills-container">
+      <p id="skills" class="heading">I AM FAMILIAR WITH</p>
+    <div class="skills-container">
+      <p><img class="skills-icon" src="icons/java.png" alt=""><br>Java</p>
+      <p><img class="skills-icon" src="icons/c.png" alt=""><br>C</p>
+      <p><img class="skills-icon" src="icons/cpp.png" alt=""><br>C++</p>
+      <p><img class="skills-icon" src="icons/python.png" alt=""><br>Python</p> 
+    </div>
+    <div class="skills-container">
+      <p><img class="skills-icon" src="icons/html-5.png" alt=""><br>HTML</p>
+      <p><img class="skills-icon" src="icons/css-3.png" alt=""><br>CSS</p> 
+      <p><img class="skills-icon" src="icons/js.png" alt=""><br>JavaScript </p> 
+      <p><img class="skills-icon" src="icons/git.png" alt=""><br>Git</p> 
+    </div>
+    <div class="skills-container">
+     <p><img class="skills-icon" src="icons/nodejs.png" alt=""><br>Node.js</p>
+     <p><img class="skills-icon" src="icons/bootstrap.png" alt=""><br>Bootstrap</p> 
+     <p><img class="skills-icon" src="icons/jquery.png" alt=""><br>jQuery</p> 
+    </div>
+    </div>
+
+    <!-- PROJECTS  -->
+    <p id="projects" class="heading">PROJECTS</p>
+    <div class="box-container">
+      <div class="box " style="margin-right: 79px;">
+        <a href="https://being-vishal.github.io/bookmark-manager/" target="_blank"><img class="project-img" src="images\bookmark.png" /></a>
+         <h2 class="project-name">Boookmark Manager</h2>
+        <p> <a href="https://github.com/being-vishal/bookmark-manager" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a> <a href="https://being-vishal.github.io/bookmark-manager/" target="_blank"> <img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
       </div>
-    </section>
-
-    <section class="skills" id="skillss">
-      <br />
-      <br />
-      <br />
-      <h1 class="heading3">
-        TECH &nbsp;I &nbsp;AM &nbsp; FAMILIAR &nbsp; WITH
-      </h1>
-      <br /><br />
-      <div class="row">
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/java.png" style="width: 4rem" />
-            <p style="margin-bottom: 48px"><b>Java</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/cpp.png" style="width: 4rem" />
-            <p><b>C++</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/html-5.png" style="width: 4rem" />
-            <p><b>HTML</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/css-3.png" style="width: 4rem" />
-            <p><b>CSS</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/js.png" style="width: 4rem" />
-            <p><b>JavaScript</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/git.png" style="width: 4rem" />
-            <p><b>Git</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/bootstrap.png" style="width: 4rem" />
-            <p><b>Bootstrap</b></p>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 mt-4 mt-md-0">
-          <div class="icon-box">
-            <img class="tech-icon" src="images/jquery.png" style="width: 4rem" />
-            <p><b> jQuery</b></p>
-          </div>
-        </div>
+      <div class="box" style="margin-right:  79px;">
+        <a href="https://being-vishal.github.io/Joke-Teller/" target="_blank"><img class="project-img" src="images\joke-teller.png" /></a> 
+        <h2 class="project-name">Joke-Teller</h2>
+        <p> <a href="https://github.com/being-vishal/Joke-Teller" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a> <a href="https://being-vishal.github.io/Joke-Teller/" target="_blank"><img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
+      </div> 
+      <div class="box">
+        <a href="https://being-vishal.github.io/quote-generator/" target="_blank"><img class="project-img" src="images\quote.png" /></a> 
+        <h2 class="project-name">Quote-Generator</h2>
+        <p> <a href="https://github.com/being-vishal/quote-generator" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a> <a href="https://being-vishal.github.io/quote-generator/" target="_blank"><img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
       </div>
-      <br /><br /><br />
-    </section>
-    <br /><br />
+    </div>
 
-    <section class="project-area" id="projectss">
-      <h1 class="heading3" style="text-decoration: underline">PROJECTS</h1>
-      <br /><br />
-      <div class="row">
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://being-vishal.github.io/Simon-Game/" target="_blank"><img src="images\simon.png" class="card-img-top"
-                alt="..." style="height: 19rem; border-radius: 10px 10px 0 0" /></a>
-            <div class="card-body">
-              <h5 class="card-title">Simon Game</h5>
-              <p class="card-text"></p>
-              <a href="https://being-vishal.github.io/Simon-Game/"  target="_blank" class="btn btn-primary simonbutton">Live</a>
-              <a href="https://github.com/being-vishal/Simon-Game"  target="_blank" class="btn btn-primary simonbutton">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://being-vishal.github.io/Joke-Teller/"  target="_blank"><img src="images\joke-teller.jpg" class="card-img-top"
-                alt="..." style="height: 19rem; border-radius: 10px 10px 0 0" ></a>
-            <div class="card-body">
-              <h5 class="card-title">Joke Teller</h5>
-              <p class="card-text"></p>
-              <a href="https://being-vishal.github.io/Joke-Teller/"  target="_blank" class="btn btn-primary jobutton">Live</a>
-              <a href="https://github.com/being-vishal/Joke-Teller"  target="_blank" class="btn btn-primary jobutton">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://being-vishal.github.io/quote-generator/"  target="_blank"><img src="images\quote.png"
-                class="card-img-top" alt="..." style="height: 19rem; border-radius: 10px 10px 0 0" ></a>
-            <div class="card-body">
-              <h5 class="card-title">Quote Generator</h5>
-              <p class="card-text"></p>
-              <a href="https://being-vishal.github.io/quote-generator/"  target="_blank" class="btn btn-primary qubutton">Live</a>
-              <a href="https://github.com/being-vishal/quote-generator"  target="_blank" class="btn btn-primary qubutton">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://being-vishal.github.io/Drum-Kit/"  target="_blank"><img src="images\fourth-project.jpg" class="card-img-top"
-                alt="..." style="height: 19rem; border-radius: 10px 10px 0 0" ></a>
-            <div class="card-body">
-              <h5 class="card-title">Drum Kit</h5>
-              <p class="card-text"></p>
-              <a href="https://being-vishal.github.io/Drum-Kit/"  target="_blank" class="btn btn-primary drbutton">Live</a>
-              <a href="https://github.com/being-vishal/Drum-Kit"  target="_blank" class="btn btn-primary drbutton">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://being-vishal.github.io/bookmark-manager/"  target="_blank"><img src="images\bookmark.png" class="card-img-top"
-                alt="..." style="height: 19rem; border-radius: 10px 10px 0 0" ></a>
-            <div class="card-body">
-              <h5 class="card-title">Bookmark Manager</h5>
-              <p class="card-text"></p>
-              <a href="https://being-vishal.github.io/bookmark-manager/"  target="_blank" class="btn btn-primary dbutton">Live</a>
-              <a href="https://github.com/being-vishal/bookmark-manager"  target="_blank" class="btn btn-primary dbutton">Source Code</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-sm-12 mb-5">
-          <div class="card" style="width: 18rem">
-            <a href="https://t.co/BPJnrPJ4Ky?amp=1"  target="_blank"><img src="images\fifth-project.jpg" class="card-img-top" alt="..."
-                style="height: 19rem; border-radius: 10px 10px 0 0"  ></a>
-            <div class="card-body">
-              <h5 class="card-title">Data Visualization</h5>
-              <p class="card-text"></p>
-              <a href="https://t.co/BPJnrPJ4Ky?amp=1"  target="_blank" class="btn btn-primary dabutton">Live</a>
-              <a href="https://github.com/being-vishal/UK-temp-Data-Visualization "  target="_blank" class="btn btn-primary dabutton">Source Code</a>
-            </div>
-          </div>
-        </div>
+     <div class="box-container">
+      <div class="box" style="margin-right:  79px;">
+         <a href="https://being-vishal.github.io/Simon-Game/" target="_blank"><img class="project-img" src="images\simon.png" /></a> 
+        <h2 class="project-name">Simon-Game</h2>
+        <p> <a href="https://github.com/being-vishal/Simon-Game" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a> <a href="https://being-vishal.github.io/Simon-Game/" target="_blank"><img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
       </div>
-    </section>
+      <div class="box" style="margin-right:  79px;">
+         <a href="https://t.co/BPJnrPJ4Ky?amp=1" target="_blank"><img class="project-img" src="images\fifth-project.png" /></a>
+        <h2 class="project-name">Data-Visualization</h2>
+        <p> <a href="https://github.com/being-vishal/UK-temp-Data-Visualization" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a> <a href="https://t.co/BPJnrPJ4Ky?amp=1" target="_blank"><img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
+      </div>
+      <div class="box">
+        <a href="https://being-vishal.github.io/Drum-Kit/" target="_blank"><img class="project-img" src="images\fourth-project.png" /></a>
+        <h2 class="project-name">Drum-Kit</h2>
+        <p> <a href="https://github.com/being-vishal/Drum-Kit" target="_blank"><img class="link-icon" src="images\github.png" alt="github-repo" title="github-repo"></a>  <a href="https://being-vishal.github.io/Drum-Kit/" target="_blank"><img class="link-icon" src="images\link.png" alt="live-site" title="live-website"></p></a>
+      </div>
+    </div>
 
-    <br />
-    <section class="contact" id="contactss">
-      <br />
-      <br />
-      <br />
-      <h1 class="heading3">Lets Connect and have a talk____________</h1>
-      <br />
-      <br />
+    <!-- CONTACT -->
+    <p id="contact" class="heading" >CONTACT</p>
+    <div class="contact-container" >
+
+      <p class="f35" style="margin: 0; margin-bottom: 30px ; ">Just ping me! to get some code done or to capture the <a title="Why is Mumbai called city of dreams?" href="https://www.google.com/search?q=why+is+mumbai+called+city+of+dreams&qs=UT&pq=why+is+mumbai+called+city+&sc=1-26&cvid=A80FD05BD3EB49198D8CED7B22C29C2E&FORM=QBRE&sp=1" target="_blank" style="color: black;">city of dreams</a> in our lens while recalling     " <a href="https://www.google.com/search?q=ross+geller&hl=en-IN&authuser=0&ei=herYYIHGCI6H4-EPy9W34Ak&oq=ro&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQQzIECAAQQzIECAAQQzIECC4QQzIECAAQQzIICC4QsQMQgwEyBQguELEDMggILhCxAxCDATIHCC4QsQMQQzIOCC4QsQMQgwEQxwEQowI6CggAEOoCELQCEEM6CgguEOoCELQCEENKBQg4EgExSgQIQRgAUK3vAljH8AJgjIMDaAFwAHgAgAHpAYgBngSSAQUwLjIuMZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=gws-wiz"  target="_blank" style="color: black;">PIVOT!</a> "</p>
+      
       <a href="https://www.linkedin.com/in/vishal-shinde-/"><i class="fab fa-linkedin social-icons"> </i></a>&nbsp;&nbsp;&nbsp;
       <a href="https://github.com/being-vishal"><i class="fab fa-github social-icons githubicon"> </i></a>&nbsp;&nbsp;&nbsp;
       <a href="https://mobile.twitter.com/being__vishal"><i class="fab fa-twitter social-icons"></i></a>&nbsp;&nbsp;&nbsp;
       <a href="mailto:itsvishal2417@gmail.com"><i class="fas fa-envelope social-icons emailicon" aria-hidden="true"></i></a>&nbsp;&nbsp;&nbsp;
-      <br />
-      <br />
-      <br />
-      <br />
-      <p style="text-align: center">
-        Made&nbsp; with &nbsp;❤ &nbsp;by&nbsp;
-        <a class="me" href="https://github.com/being-vishal"><b style="text-decoration: none">Me.</b></a>
-      </p>
-      <br />
-      <br />
-    </section>
-  </main>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"> <strong>^</strong></button>
-  <script src="javascript\index.js" charset="utf-8"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
-</body>
+    </div>
+      
+    <!-- CITY SVG -->
+    <img class="city-img" src="images\city.svg" alt="" style="width:100%; position: relative; bottom: -5px; margin-top: 10px;">
+    
+     <!-- GO TO TOP BUTTON -->
+     <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <strong>^</strong>
+    </button>
 
+    <script src="index.js" charset="utf-8"></script>
+</body>
 </html>
