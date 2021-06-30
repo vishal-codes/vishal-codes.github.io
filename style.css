@@ -176,8 +176,8 @@ label #cancel {
 .box {
   width: 43%;
   height: auto;
-  border: 1px solid #000000;
-  background: linear-gradient(29deg, #d757d3 8%, #37bcd5f8 36%, #90dce8 100%);
+  border: 1px solid #c5c5c56e;
+  background: linear-gradient(29deg, #300129 8%, #003e49f8 36%, #004e5a 100%);
   border-radius: 8px;
   transition: 0.9;
   border-bottom: 8px solid #0274d8de;
@@ -196,7 +196,7 @@ label #cancel {
   font-size: 20px;
   font-weight: 500;
   margin-left: 15px;
-  color: rgb(0, 0, 0);
+  color: rgb(238, 235, 235);
 }
 .link-icon {
   width: 10%;
@@ -209,6 +209,10 @@ label #cancel {
 }
 
 /* CONTACT */
+#contact{
+  margin-top: 100px;
+  margin-bottom: 25px;
+}
 .contact-container {
   width: 1000px;
   height: auto;
@@ -271,30 +275,29 @@ label #cancel {
 
 /* GO TO TOP BUTTON */
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 20px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(255, 255, 255); /* Set a background color */
-    color: rgb(0, 0, 0); /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    display: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 99; 
+    border: none; 
+    outline: none; 
+    cursor: pointer; 
+    padding: 15px; 
     height: 50px;
     width: 50px;
-    border-radius: 50%; /* Rounded corners */
-    font-size: 31px; /* Increase font size */
+    border-radius: 50%; 
+    font-size: 31px; 
     text-align: center;
-    /* box-shadow: 0 8px 16px 0 rgba(255, 255, 255, 0.767), 0 6px 20px 0 rgba(245, 240, 240, 0.836); */
-  }
-  
-  #myBtn:hover {
-    background-color: rgb(0, 0, 0); /* Add a dark-grey background on hover */
+    background-color: rgba(229, 226, 226, 0.664); 
+    color: rgb(0, 0, 0);
+    box-shadow:  0 4px 8px 0  rgb(0, 0, 0);
+ }
+#myBtn:hover {
+    background-color: rgb(0, 0, 0);
     color: white;
     box-shadow:  0 4px 8px 0  thistle;
-  }
+ }
 
 /* MEDIA */
 @media (max-width: 1000px) {
@@ -480,6 +483,7 @@ label #cancel {
   #contact {
     padding-top: 20px;
     margin-bottom: 20px;
+    margin-top: 30px;
   }
   .contact-container p {
     text-align: left;
@@ -492,6 +496,11 @@ label #cancel {
     font-size: 1.8rem;
     margin-right: 10px;
   }
+  #myBtn:hover {
+    background-color: rgba(229, 226, 226, 0.664); 
+    color: rgb(0, 0, 0); 
+    box-shadow:  0 4px 8px 0  rgb(0, 0, 0);
+ }
 }
 
 @keyframes fadeIn {
