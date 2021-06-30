@@ -26,8 +26,9 @@ nav {
   border-radius: 0 0 5px 5px;
 }
 .logo {
-  width: 80px;
-  height: 80px;
+  width:  40px;
+  height: 40px;
+  margin-top: 20px;
   position: absolute;
   top: 0;
   left: 7%;
@@ -302,7 +303,7 @@ label #cancel {
 /* MEDIA */
 @media (max-width: 1000px) {
   .name-container {
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
   .name-div {
@@ -318,6 +319,10 @@ label #cancel {
   }
   .box {
     margin-bottom: 25px;
+  }
+  .contact-container {
+    width: 80%;
+    margin: auto;
   }
 }
 @media (max-width: 850px) {
@@ -410,8 +415,9 @@ label #cancel {
     height: 70px;
   }
   .logo {
-    height: 70px;
-    width: 70px;
+    left: 6%;
+    height: 30px;
+    width:  30px;
   }
   .name-container {
     width: 100%;
