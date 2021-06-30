@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
+#toggle-check{
+  display: none;
+}
+
 :root{
   --bg-color : linear-gradient(
     325deg,
@@ -31,7 +35,25 @@
     rgba(25, 211, 246, 1) 80%,
     rgba(144, 220, 232, 1) 96%
   );
+}
 
+[data-theme = "dark"]{
+  --bg-color : linear-gradient(147deg, #07002c 0%, #003f69 74%);
+  --nav-bg-color : #000000;
+  --nav-shadow-color :  3px 3px 0px 0px #021772;
+  --name-color :  linear-gradient(45deg, #0091aa, #00687a);
+  --keen-color : #0a8cad;
+  --heading-color : #93d0ec;
+  --normal-text-color : rgba(221, 210, 210, 0.747);
+  --pivot-color : white;
+  --button-color : rgba(255, 255, 255, 0.349);
+  --button-text : white;
+  --button-shadow : 0 4px 8px 0  rgb(0, 0, 0);
+  --button-color-hover : rgb(143, 142, 148);
+  --button-text-hover :  rgb(22, 17, 17);
+  --button-shadow-hover : 0 4px 8px 0  rgb(0, 0, 0);
+  --ul-bgcolor : #000000d8;
+  --mobile-bgcolor :linear-gradient(147deg, #07002c 0%, #003f69 74%);
 }
 
 html {
@@ -42,16 +64,7 @@ body {
   font-family: "Montserrat";
   font-weight: 400;
   margin: 0;
-  background: linear-gradient(
-    325deg,
-    rgba(2, 0, 36, 1) 0%,
-    #ec60e8ed 0%,
-    #eb7be7 14%,
-    #c47aec 32%,
-    #19d3f6 60%,
-    #90dce8 82%
-  );
-  /* background: linear-gradient(6deg, rgba(12,120,164,1) 19%, rgb(83, 202, 226) 45%, rgba(8,167,201,1) 58%, rgb(110, 202, 224) 75%); */
+  background: var(--bg-color);
 }
 
 /* NAVBAR */
@@ -146,6 +159,7 @@ label #cancel {
 .keen{
   font-size: 20px;
   color: var(--keen-color);
+  margin-bottom: 5px;
 }
 .name-div p {
   margin-top: 0;
