@@ -19,29 +19,41 @@ function topFunction() {
 // THEME TOGGLE
 const theme_img = document.getElementById("theme-img");
 const toggleSwitch = document.getElementById("toggle-check");
-
 //Switch Theme
 function switchTheme(event){
    if(event.target.checked){
-       document.documentElement.setAttribute('data-theme' , 'dark');
-       localStorage.setItem('theme' , 'dark');
-       theme_img.src = 'images/moon.svg';
+       document.documentElement.setAttribute('data-theme' , 'light');
+       localStorage.setItem('theme' , 'light');
+       theme_img.src = 'images/sun.svg';
    }else{
-    document.documentElement.setAttribute('data-theme' , 'light');
-    localStorage.setItem('theme' , 'light');
-    theme_img.src = 'images/sun.svg';
+    document.documentElement.setAttribute('data-theme' , 'dark');
+    localStorage.setItem('theme' , 'dark');
+    theme_img.src = 'images/moon.svg';
    }
 }
-//Event listener
 toggleSwitch.addEventListener('change' , switchTheme);
-
 //Check Local Storage for theme
 const currentTheme = localStorage.getItem('theme');
 if(currentTheme){
     document.documentElement.setAttribute('data-theme' , currentTheme);
-    if(currentTheme === 'dark'){
+    if(currentTheme === 'light'){
         toggleSwitch.checked = true;
-        theme_img.src = 'images/moon.svg';
+        theme_img.src = 'images/sun.svg';
     }
 }
 
+//Navbar
+const navToggler = document.querySelector(".nav-toggler");
+navToggler.addEventListener("click", navToggle);
+
+function navToggle() {
+   navToggler.classList.toggle("active");
+   const nav = document.querySelector(".nav");
+   nav.classList.toggle("open");
+   if(nav.classList.contains("open")){
+     nav.style.maxHeight = "100vh";
+   }
+   else{
+     nav.removeAttribute("style");
+   }
+} 
