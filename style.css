@@ -289,7 +289,7 @@ body {
 .project-name {
   font-size: 20px;
   font-weight: 500;
-  margin-left: 15px;
+  margin: 15px 2px 6px 15px ;
   color: rgb(238, 235, 235);
 }
 .link-icon {
@@ -302,7 +302,7 @@ body {
 }
 .project-desc {
   color: rgba(221, 210, 210, 0.925);
-  margin-left: 15px;
+  margin: 0px 10px 10px 15px;
   font-size: 15px;
 }
 
@@ -563,7 +563,7 @@ body {
     width: 100%;
   }
   .project-img {
-    height: 310px;
+    height: 360px;
   }
   .project-name {
     text-align: left;
