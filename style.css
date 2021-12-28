@@ -409,7 +409,7 @@ body {
 }
 
 /* MEDIA */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1222px) {
   .name-container {
     width: auto;
   }
