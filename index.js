@@ -4,7 +4,7 @@
 mybutton = document.getElementById("myBtn");
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {
-  if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+  if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
     mybutton.style.display = "block";
   } else {
     mybutton.style.display = "none";
@@ -44,7 +44,15 @@ if(currentTheme){
 
 //Navbar
 const navToggler = document.querySelector(".nav-toggler");
+const navCloseLi0 = document.querySelector(".nav-close-li-0");
+const navCloseLi1 = document.querySelector(".nav-close-li-1");
+const navCloseLi2 = document.querySelector(".nav-close-li-2");
+const navCloseLi3 = document.querySelector(".nav-close-li-3");
 navToggler.addEventListener("click", navToggle);
+navCloseLi0.addEventListener("click", navToggle);
+navCloseLi1.addEventListener("click", navToggle);
+navCloseLi2.addEventListener("click", navToggle);
+navCloseLi3.addEventListener("click", navToggle);
 
 function navToggle() {
    navToggler.classList.toggle("active");
