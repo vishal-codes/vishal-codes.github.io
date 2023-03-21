@@ -24,11 +24,11 @@ function switchTheme(event){
    if(event.target.checked){
        document.documentElement.setAttribute('data-theme' , 'light');
        localStorage.setItem('theme' , 'light');
-       theme_img.src = 'images/sun.svg';
+       theme_img.src = 'icons/sun.svg';
    }else{
     document.documentElement.setAttribute('data-theme' , 'dark');
     localStorage.setItem('theme' , 'dark');
-    theme_img.src = 'images/moon.svg';
+    theme_img.src = 'icons/moon.svg';
    }
 }
 toggleSwitch.addEventListener('change' , switchTheme);
@@ -38,7 +38,7 @@ if(currentTheme){
     document.documentElement.setAttribute('data-theme' , currentTheme);
     if(currentTheme === 'light'){
         toggleSwitch.checked = true;
-        theme_img.src = 'images/sun.svg';
+        theme_img.src = 'icons/sun.svg';
     }
 }
 
