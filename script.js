@@ -114,7 +114,7 @@ function initRevealAnimations() {
         obs.unobserve(entry.target);
       });
     },
-    { threshold: 0.2, rootMargin: '0px 0px -18% 0px' }
+    { threshold: 0.01, rootMargin: '0px 0px -10% 0px' }
   );
 
   fadeEls.forEach((el) => observer.observe(el));
