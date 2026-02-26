@@ -1,834 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- HTML Meta Tags -->
-        <title>Vishal Shinde</title>
-        <meta
-            name="description"
-            content="Vishal a.k.a Chinu is an aspiring Computer Science student based in Mumbai,India. He is deeply passionate about software development & innovations, firm believer of team work and striving hard with other community members to create an impact. He is helping his peers and juniors to get started with programming and is introducing them to open source."
-        />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vishal Shinde | Software Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Vishal Vilas Shinde — software engineer focused on backend systems, AI/ML pipelines, and full-stack product development." />
+  <meta name="theme-color" content="#f5f7fb" />
+  <meta property="og:title" content="Vishal Shinde | Software Engineer Portfolio" />
+  <meta property="og:description"
+    content="Backend, AI/ML, and full-stack engineering projects, experience, and contact information." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="./social-preview.png" />
+  <meta property="og:url" content="https://vishal-codes.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Vishal Shinde | Software Engineer Portfolio" />
+  <meta name="twitter:description"
+    content="Backend, AI/ML, and full-stack engineering projects, experience, and contact information." />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700;800&family=Syne:wght@500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
 
-        <!-- Facebook Meta Tags -->
-        <meta property="og:url" content="https://vishal-codes.github.io/" />
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="Vishal Shinde" />
-        <meta
-            property="og:description"
-            content="Hello, I'm Vishal, a first-generation student pursuing a Master's degree in Computer Science. I like to explore systems and have a keen interest in Full-stack development. I love learning by building projects, working on Open-Source software, and getting involved with the incredible communities around it. Outside of work, I like Skating, Hiking & Photography."
-        />
-        <meta
-            property="og:image"
-            content="https://res.cloudinary.com/dpwgfaikq/image/upload/v1679715341/portfolio/vishal-cerritus-meetup_wziev3.webp"
-        />
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true">
+    <span class="scroll-progress__bar" id="scrollProgressBar"></span>
+  </div>
 
-        <!-- Twitter Meta Tags -->
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="vishal-codes.github.io" />
-        <meta
-            property="twitter:url"
-            content="https://vishal-codes.github.io/"
-        />
-        <meta name="twitter:title" content="Vishal Shinde" />
-        <meta
-            name="twitter:description"
-            content="Vishal a.k.a Chinu is an aspiring Computer Science student based in Mumbai,India. He is deeply passionate about software development & innovations, firm believer of team work and striving hard with other community members to create an impact. He is helping his peers and juniors to get started with programming and is introducing them to open source."
-        />
-        <meta
-            name="twitter:image"
-            content="https://res.cloudinary.com/dpwgfaikq/image/upload/v1679715372/portfolio/Promo-Twitter-Twitter-cc_nub1ls.webp"
-        />
+  <header class="site-header" id="top">
+    <div class="container site-header__stack">
+      <nav class="nav glass" aria-label="Primary navigation">
+        <a class="brand" href="https://drive.google.com/file/d/1RpDk_Hivos8owO11qOKuEal0WQ-Ss8dM/view"
+          aria-label="Go to resume PDF" target="_blank" rel="noopener noreferrer">
+          <span class="brand__dot" aria-hidden="true"></span>
+          <span class="brand__text">Resume</span>
+        </a>
 
-        <!-- Meta Tags Generated via https://www.opengraph.xyz -->
-        <meta
-            name="keywords"
-            content="Vishal-Shinde, Chinu, chinu1726, Java, Spring Boot, JavaScript, Python, React, vishal-codes"
-        />
+        <div class="nav-right">
+          <ul class="nav-links" role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
 
-        <!-- TITLE & FAVICON -->
-        <title>Vishal Shinde</title>
-        <link rel="icon" href="favicon.ico" />
+          <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode"
+            aria-pressed="false" title="Toggle theme">
+            <span class="visually-hidden">Toggle theme</span>
+            <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <circle cx="12" cy="12" r="4"></circle>
+                <path
+                  d="M12 2v2.5M12 19.5V22M4.93 4.93l1.77 1.77M17.3 17.3l1.77 1.77M2 12h2.5M19.5 12H22M4.93 19.07 6.7 17.3M17.3 6.7l1.77-1.77">
+                </path>
+              </svg>
+            </span>
+            <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"></path>
+              </svg>
+            </span>
+          </button>
 
-        <!-- CSS -->
-        <link rel="stylesheet" href="style.css" />
-    </head>
-
-    <body>
-        <!-- NAVBAR  -->
-        <header class="header">
-            <div class="container">
-                <div class="row align-items-center justify-content-between">
-                    <div class="logo">
-                        <a
-                            href="https://drive.google.com/file/d/1Jhh3zruP3I0L2v5L_dA7JC0pezn_vW3I/view"
-                            target="_blank"
-                            rel="noopener"
-                            >Resume</a
-                        >
-                    </div>
-                    <button
-                        type="button"
-                        class="nav-toggler"
-                        aria-label="Nabvar-toggler"
-                    >
-                        <span></span>
-                    </button>
-                    <nav class="nav">
-                        <ul>
-                            <li class="nav-close-li-0">
-                                <a href="#about">about</a>
-                            </li>
-                            <li class="nav-close-li-1">
-                                <a href="#skills">skills</a>
-                            </li>
-                            <li class="nav-close-li-2">
-                                <a href="#projects">projects</a>
-                            </li>
-                            <li class="nav-close-li-3">
-                                <a href="#contact">contact</a>
-                            </li>
-                            <li class="nav-close-li-4">
-                                <label for="toggle-check">
-                                    <img
-                                        id="theme-img"
-                                        src="icons/moon.svg"
-                                        class="toggle-icon"
-                                        alt="toggle-theme"
-                                    />
-                                </label>
-                                <label class="theme-switch">
-                                    <input type="checkbox" id="toggle-check" />
-                                </label>
-                                <span id="toggle-icon" title="toggle-theme">
-                                </span>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </header>
-
-        <!-- NAME -->
-        <div class="name-container">
-            <div class="my-img-div">
-                <div class="zonecircle1"></div>
-                <img
-                    class="my-img"
-                    src="https://res.cloudinary.com/dpwgfaikq/image/upload/c_scale,w_600/v1679418228/portfolio/vvs1-circular_hvwsmg.webp"
-                    alt="Vishals Picture"
-                />
-                <div class="zonecircle2"></div>
-            </div>
-            <div class="name-div">
-                <h3 class="name">Vishal Shinde</h3>
-                <p class="keen">&nbsp;&nbsp; A keen learner</p>
-
-                <!-- TOGGLE THEME -->
-                <div class="theme-switch-wrapper">
-                    <a
-                        href="https://www.linkedin.com/in/vishal-shinde-/"
-                        class="mini-social"
-                        aria-label="LinkedIn"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                            alt="vishals linkedin"
-                            class="mslinks"
-                            src="/icons/linkedin.svg"
-                    /></a>
-                    <a
-                        href="https://github.com/vishal-codes"
-                        class="mini-social"
-                        aria-label="GitHub"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                            alt="vishals github"
-                            src="/icons/bgithub.svg"
-                            class="mslinks"
-                            style="width: 40px !important; margin-bottom: 4px"
-                    /></a>
-                    <a
-                        href="https://twitter.com/chinu2417"
-                        class="mini-social"
-                        aria-label="Twitter"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                            alt="vishals twitter"
-                            class="mslinks"
-                            src="/icons/twitter.svg"
-                            style="width: 53px; margin-bottom: -4px"
-                    /></a>
-                    <a
-                        href="https://chinuwrites.hashnode.dev/"
-                        class="mini-social"
-                        aria-label="Hashnode"
-                        target="_blank"
-                        rel="noopener"
-                        ><img
-                            alt="vishals hashnode"
-                            class="mslinks"
-                            style="width: 40px !important; margin-bottom: 4px"
-                            src="/icons/hashnode.svg"
-                    /></a>
-                    <a
-                        href="mailto:itsvishal2417@gmail.com"
-                        class="mini-social"
-                        aria-label="Mail"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            alt="vishals email"
-                            src="/icons/mail.svg"
-                            class="mslinks"
-                        />
-                    </a>
-                </div>
-            </div>
+          <button class="nav-toggle" type="button" id="navToggle" aria-label="Open navigation menu"
+            aria-expanded="false" aria-controls="mobileNav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
+      </nav>
 
-        <!-- ABOUT ME -->
-        <div id="about" class="about-container">
-            <p class="heading">ABOUT &nbsp;ME 🙋‍♂️</p>
-            <div class="intro-container">
-                <div class="namaste-container">
-                    <p class="f35 hey-intro">Hey there! 👋</p>
-                    <p class="f22">
-                        I’m Vishal a first generation student pursuing a Master's degree in Computer Science from Cal State Fullerton.
-                    </p>
-                    <p class="description">
-                        I'm deeply passionate about software development 🖥️ and
-                        love building Progressive Web Apps (PWAs) 📱. I'm also
-                        an active participant in hackathons 💻 and enjoy writing
-                        blogs 📝 to share my learnings. In my free time, you can
-                        find me with my camera
-                        <a
-                            href="https://drive.google.com/drive/folders/1mqxd4jkRt-MrOI_HCEWbhAH1e664Ij1q?usp=sharing"
-                            style="
-                                text-decoration: underline rgb(0, 38, 255) 3px;
-                            "
-                            target="_blank"
-                            rel="noopener"
-                            >📷</a
-                        >, capturing the beauty around me 🌅. <br /><br />I
-                        strongly believe in the power of community 👥 and have
-                        organized events to promote awareness of the latest
-                        advancements in technology. As a highly motivated and
-                        driven individual, I'm always eager to take on new
-                        challenges and broaden my horizons 🚀. With my technical
-                        expertise and passion for problem solving, I'm confident
-                        that I can make a valuable contribution to any team or
-                        organization 🤝.
-                    </p>
-                </div>
-                <div class="exp-container">
-                    <p class="f35">My experience 👨‍💻</p>
-                    <div class="exp-box">
-                        <div class="exp-year">
-                            <img
-                                src="icons/calendar.svg"
-                                alt="calendar-icon"
-                            />May 23 - July 23 &nbsp;&nbsp; [Munich, Germany | Remote]
-                        </div>
-                        <a
-                            href="https://www.digitalproductschool.io"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <p class="f22">
-                                DPS by UnternehmerTUM | SE Intern
-                            </p></a
-                        >
-                        <ul class="description">
-                            <li>
-                                Building a robust backend using Spring Boot, PostgreSQL, Flyway, Docker, GitHub Actions and AWS App Runner.
-                            </li>
-                            <li>
-                                Programmed radar sensors to collect valuable data to train the anomaly detection ML algorithm.
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="exp-box">
-                        <div class="exp-year">
-                            <img
-                                style="width: 32px"
-                                src="icons/calendar.svg"
-                                alt="calendar-icon"
-                            />
-                            July 22 - Oct 22 &nbsp;&nbsp; [Bengaluru, India | Remote]
-                        </div>
-                        <a
-                            href="https://www.mezchip.com/"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <p class="f22">
-                                Mezchip | Full-stack Developer Intern
-                            </p>
-                        </a>
-                        <ul class="description">
-                            <li>
-                                Developed a Dashboard and improved the Landing
-                                Page using React.js and SASS.
-                            </li>
-                            <li>
-                                Built a Live Chat bot and and enhanced the
-                                authentication system using Flask, Preact,
-                                MongoDB, and JWT.
-                            </li>
-                            <li>
-                                Decreased the final bundle size of chat bot by
-                                approximately 80% through reduction of package
-                                dependencies.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="mobile-nav glass" id="mobileNav" aria-label="Mobile navigation">
+        <a href="#home">Home</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </header>
 
-        <!-- SKILLS -->
-        <div class="main-skills-container" id="skills">
-            <p class="heading">MY GEAR 🛠️</p>
-            <div class="skills-container">
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/java.svg"
-                        alt="Vishal Shinde Java"
-                    /><br />Java
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/typescript.svg"
-                        alt="Typescript"
-                    /><br />Typescript
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/cpp.svg"
-                        alt="C++"
-                    /><br />C++
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/python.svg"
-                        alt="Pyhton"
-                    /><br />Pyhton
-                </p>
-            </div>
-            <div class="skills-container">
-                <p class="icon-name">
-                    <img
-                        class="skills-icon react-icon"
-                        src="icons/react2.png"
-                        alt="React.js"
-                    /><br />React.js
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/redux.svg"
-                        alt="Redux"
-                    /><br />Redux
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/tailwind-css.svg"
-                        alt="Tailwind CSS"
-                    /><br />Tailwind <br />
-                    CSS
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/materialui.svg"
-                        alt="Material UI"
-                    /><br />Material <br />UI
-                </p>
-            </div>
-            <div class="skills-container">
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/nodejs.svg"
-                        alt="Node.js"
-                    /><br />Node.js
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/socket-io.svg"
-                        alt="Socket-io"
-                    /><br />Socket-io
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/webrtc.svg"
-                        alt="WebRTC"
-                    /><br />WebRTC
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/mongodb.svg"
-                        alt="MongoDB"
-                    /><br />MongoDB
-                </p>
-            </div>
-            <div class="skills-container">
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/aws.svg"
-                        alt="AWS"
-                    /><br />AWS
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/docker.svg"
-                        alt="Docker"
-                    /><br />Docker
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/spring.svg"
-                        alt="Spring"
-                    /><br />Spring
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/postgresql.svg"
-                        alt="PostgreSQL"
-                    /><br />PostgreSQL
-                </p>
-            </div>
-            <div class="skills-container">
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/git.svg"
-                        alt="Git"
-                    /><br />Git
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/github.svg"
-                        alt="GitHub"
-                    /><br />GitHub
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/firebase.svg"
-                        alt="Firebase"
-                    /><br />Firebase
-                </p>
-                <p class="icon-name">
-                    <img
-                        class="skills-icon"
-                        src="icons/bash.svg"
-                        alt="Bash"
-                    /><br />Bash
-                </p>
-            </div>
+  <main id="main-content">
+    <section class="hero section" id="home" aria-labelledby="heroTitle">
+      <div class="container hero__grid">
+        <div class="hero__content glass fade-in">
+          <p class="eyebrow">Software Engineer • AI/ML Systems • Graduate CS Student</p>
+          <h1 id="heroTitle">Vishal Vilas Shinde</h1>
+          <p class="hero__summary">
+            Graduate computer science student at California State University, Fullerton with hands-on
+            experience in backend engineering, machine learning pipelines, and full-stack product
+            development. I build reliable systems with measurable performance gains, from CI/CD-driven
+            teaching workflows to production-ready APIs and retrieval-based AI applications.
+          </p>
 
-        </div>
-
-        <!-- PROJECTS  -->
-        <div id="projects" class="projects-container">
-            <p class="heading">PROJECTS 🎨</p>
-            <!-- <div class="box-wrapper"> -->
-            <div class="box">
-                <div class="project-img">
-                    <a
-                        href="https://comfortspace.netlify.app/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/dpwgfaikq/image/upload/c_scale,h_540,w_1010/v1679485221/portfolio/cs-screely_wpii0u.webp"
-                            alt="Comfort Space"
-                    /></a>
-                </div>
-                <div class="project-info">
-                    <h2 class="project-name">
-                        Comfort Space
-                        <a
-                            href="https://github.com/Evozone/comfortspace/tree/main"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/bgithub.svg"
-                                alt="github-repo"
-                                title="github-repo"
-                        /></a>
-                        <a
-                            href="https://comfortspace.netlify.app/"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/link.svg"
-                                alt="live-site"
-                                title="live-website"
-                        /></a>
-                    </h2>
-                    <ul class="description">
-                        <li>
-                            Developed a robust desktop first progressive web app
-                            featuring blogs, voice rooms, chat and video call.
-                        </li>
-                        <li>
-                            Leveraged socket-io and WebRTC technologies to
-                            enable real-time messaging, peer-to-peer video calls
-                            and customized real-time notifications, typing
-                            indicators and session status to enhance the user
-                            experience.
-                        </li>
-                        <li>
-                            Implemented a Continuous Integration and Continuous 
-                            Deployment pipeline for frontend and backend using GitHub
-                            Actions, AWS EC2, Docker and Netlify.
-                        </li>
-                    </ul>
-                    <div class="project-tech">
-                        <div class="project-tech-img-container">
-                            <img src="/icons/react.svg" alt="recat.js" />
-                            <span class="project-tech-img-text">React.js</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/expressjs.svg" alt="expressjs" />
-                            <span class="project-tech-img-text"
-                                >Express.js</span
-                            >
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/mongodb.svg" alt="MongoDb" />
-                            <span class="project-tech-img-text">MongoDB</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/socket-io.svg" alt="Socket-io" />
-                            <span class="project-tech-img-text">Socket-io</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/webrtc.svg" alt="WebRTC" />
-                            <span class="project-tech-img-text">WebRTC</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/aws-ec2.svg" alt="AWS EC2" />
-                            <span class="project-tech-img-text">AWS EC2</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img
-                                src="/icons/docker.svg"
-                                alt="Docker"
-                            />
-                            <span class="project-tech-img-text"
-                                >Docker</span
-                            >
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img
-                                src="/icons/githubaction.svg"
-                                alt="GitHub Actions"
-                            />
-                            <span class="project-tech-img-text"
-                                >GitHub Actions</span
-                            >
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="project-img">
-                    <a
-                        href="https://tiffinservice.netlify.app/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/dpwgfaikq/image/upload/c_scale,h_540,w_1010/v1679715972/portfolio/tiffin-screely_zszd6g.webp"
-                            alt="Tiffin Service Project"
-                    /></a>
-                </div>
-                <div class="project-info">
-                    <h2 class="project-name">
-                        Tiffin Service
-                        <a
-                            href="https://github.com/vishal-codes/tiffin-service"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/bgithub.svg"
-                                alt="github-repo"
-                                title="github-repo"
-                        /></a>
-                        <a
-                            href="https://tiffinservice.netlify.app/"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/link.svg"
-                                alt="live-site"
-                                title="live-website"
-                        /></a>
-                    </h2>
-                    <ul class="description">
-                        <li>
-                            A Progressive Web App that allows users to locate
-                            the best tiffin services in their city through
-                            search or by identifying their location on the
-                            provided map. Additionally, users can filter tiffin
-                            services based on their monthly cost.
-                        </li>
-                        <li>
-                            The front-end is built using Material UI, the
-                            backend using express.js, and state management is
-                            done using the Context API while images are stored
-                            in a Firebase storage bucket.
-                        </li>
-                        <li>
-                            Implemented One-tap login utilizing Google’s latest
-                            Identity Services and developed a middleware for
-                            server-side authentication.
-                        </li>
-                    </ul>
-                    <div class="project-tech">
-                        <div class="project-tech-img-container">
-                            <img src="/icons/react.svg" alt="recat.js" />
-                            <span class="project-tech-img-text">React.js</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/redux.svg" alt="redux" />
-                            <span class="project-tech-img-text">Redux</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img
-                                src="/icons/materialui.svg"
-                                alt="Material UI"
-                            />
-                            <span class="project-tech-img-text"
-                                >Material<br />UI</span
-                            >
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/expressjs.svg" alt="expressjs" />
-                            <span class="project-tech-img-text"
-                                >Express.js</span
-                            >
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/mongodb.svg" alt="MongoDb" />
-                            <span class="project-tech-img-text">MongoDB</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/firebase.svg" alt="Firebase" />
-                            <span class="project-tech-img-text">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="box">
-                <div class="project-img">
-                    <a
-                        href="https://bookmark-manager-2617.web.app/"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <img
-                            src="https://res.cloudinary.com/dpwgfaikq/image/upload/c_scale,h_540,w_1010/v1679485234/portfolio/bkm-screely_zym9py.webp"
-                            alt="Vishal's Bookmark Manager"
-                    /></a>
-                </div>
-                <div class="project-info">
-                    <h2 class="project-name">
-                        Boookmark Manager
-                        <a
-                            href="https://github.com/Evozone/Bookmark-Manager/tree/main"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/bgithub.svg"
-                                alt="github-repo"
-                                title="github-repo"
-                        /></a>
-                        <a
-                            href="https://bookmark-manager-2617.web.app/"
-                            target="_blank"
-                            rel="noopener"
-                        >
-                            <img
-                                class="link-icon"
-                                src="icons/link.svg"
-                                alt="live-site"
-                                title="live-website"
-                        /></a>
-                    </h2>
-                    <ul class="description">
-                        <li>
-                            A Progressive Web App which focuses on simple, safe
-                            and easy management of the bookmarks stored by the
-                            user.
-                        </li>
-                        <li>
-                            Implemented Redux for state management, Styled
-                            Components for styling, and Firebase as a backend
-                            service.
-                        </li>
-                        <li>
-                            Used Muuri-react for implementing Search, Drag and
-                            Rearrange functionality.
-                        </li>
-                    </ul>
-                    <div class="project-tech">
-                        <div class="project-tech-img-container">
-                            <img src="/icons/react.svg" alt="recat.js" />
-                            <span class="project-tech-img-text">React.js</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/redux.svg" alt="redux" />
-                            <span class="project-tech-img-text">Redux</span>
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img
-                                src="/icons/styledcomponents.svg"
-                                alt="Styled Components"
-                            />
-                            <span class="project-tech-img-text"
-                                >Styled<br />Components</span
-                            >
-                        </div>
-                        <div class="project-tech-img-container">
-                            <img src="/icons/firebase.svg" alt="Firebase" />
-                            <span class="project-tech-img-text">Firebase</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- CONTACT -->
-        <div id="contact" class="contact-container">
-            <p class="heading">CONTACT 🤝</p>
-            <p class="f35 contact-description">
-                Just ping me! to get some code done or to capture the
-                <a
-                    title="Mumbai"
-                    href="https://www.google.com/search?channel=fs&client=ubuntu&q=mumbai+city+of+dreams&pccc=1"
-                    target="_blank"
-                    rel="noopener"
-                    class="pivot"
-                    >city of dreams</a
-                >
-                in our lens while recalling "
-                <a
-                    title="Ross Geller"
-                    href="https://www.google.com/search?q=ross+geller&hl=en-IN&authuser=0&ei=herYYIHGCI6H4-EPy9W34Ak&oq=ro&gs_lcp=Cgdnd3Mtd2l6EAEYADIECAAQQzIECAAQQzIECAAQQzIECC4QQzIECAAQQzIICC4QsQMQgwEyBQguELEDMggILhCxAxCDATIHCC4QsQMQQzIOCC4QsQMQgwEQxwEQowI6CggAEOoCELQCEEM6CgguEOoCELQCEENKBQg4EgExSgQIQRgAUK3vAljH8AJgjIMDaAFwAHgAgAHpAYgBngSSAQUwLjIuMZgBAKABAaoBB2d3cy13aXqwAQrAAQE&sclient=gws-wiz"
-                    target="_blank"
-                    rel="noopener"
-                    class="pivot"
-                    >PIVOT!</a
-                >
-                "
+          <div class="hero__meta" role="list" aria-label="Location and contact highlights">
+            <p role="listitem"><span>Based in</span> California, United States</p>
+            <p role="listitem"><span>Email</span> <a href="mailto:itsvishal2417@gmail.com">itsvishal2417@gmail.com</a>
             </p>
+          </div>
 
-            <a
-                href="https://www.linkedin.com/in/vishal-shinde-/"
-                aria-label="LinkedIn"
-                target="_blank"
-                rel="noopener"
-                ><img
-                    alt="vishals linkedin"
-                    class="social-icons"
-                    src="/icons/linkedin.svg"
-            /></a>
-            <a
-                href="https://github.com/vishal-codes"
-                aria-label="GitHub"
-                target="_blank"
-                rel="noopener"
-                ><img
-                    alt="vishals github"
-                    src="/icons/bgithub.svg"
-                    class="social-icons"
-                    style="width: 40px !important; margin-bottom: 4px"
-            /></a>
-            <a
-                href="https://twitter.com/chinu2417"
-                aria-label="Twitter"
-                target="_blank"
-                rel="noopener"
-                ><img
-                    alt="vishals twitter"
-                    class="social-icons"
-                    src="/icons/twitter.svg"
-                    style="width: 53px; margin-bottom: -4px"
-            /></a>
-            <a
-                href="mailto:itsvishal2417@gmail.com"
-                aria-label="Mail"
-                target="_blank"
-                rel="noopener"
-                ><img
-                    alt="vishals email"
-                    src="/icons/mail.svg"
-                    class="social-icons"
-            /></a>
-            <a
-                href="https://chinuwrites.hashnode.dev/"
-                aria-label="Hashnode"
-                target="_blank"
-                rel="noopener"
-                ><img
-                    alt="vishals hashnode"
-                    class="social-icons"
-                    style="width: 40px !important; margin-bottom: 4px"
-                    src="/icons/hashnode.svg"
-            /></a>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="https://drive.google.com/file/d/1RpDk_Hivos8owO11qOKuEal0WQ-Ss8dM/view"
+              target="_blank" rel="noopener noreferrer">Resume</a>
+            <a class="btn btn--ghost" href="#contact">View Projects</a>
+          </div>
         </div>
 
-        <!-- CITY SVG -->
-        <img
-            class="city-img"
-            src="icons/city.svg"
-            alt=""
-            style="
-                width: 100%;
-                position: relative;
-                bottom: -5px;
-                margin-top: 10px;
-            "
-        />
+        <aside class="hero__aside fade-in" aria-label="Quick profile information">
+          <div class="profile-tile glass">
+            <h2>Focus Areas</h2>
+            <ul class="tag-list" role="list">
+              <li>Applied AI </li>
+              <li>Backend APIs</li>
+              <li>Machine Learning</li>
+            </ul>
+          </div>
 
-        <!-- GO TO TOP BUTTON -->
-        <button onclick="topFunction()" id="myBtn" title="Go to top">
-            <strong>^</strong>
-        </button>
+          <div class="profile-tile glass">
+            <h2>Education</h2>
+            <div class="edu-item">
+              <p class="edu-item__degree">M.S. Computer Science</p>
+              <p class="edu-item__school">California State University, Fullerton</p>
+              <p class="edu-item__meta">Aug 2024 - Dec 2026</p>
+            </div>
+            <div class="edu-item">
+              <p class="edu-item__degree">B.E. Computer Engineering</p>
+              <p class="edu-item__school">University of Mumbai</p>
+              <p class="edu-item__meta">Aug 2020 - May 2024</p>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-        <script src="index.js" charset="utf-8"></script>
-    </body>
+    <section class="section" id="experience" aria-labelledby="experienceTitle">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="eyebrow">Experience</p>
+          <h2 id="experienceTitle">Engineering, research, and teaching work</h2>
+          <p>
+            Experience across teaching infrastructure, computer vision research, backend systems,
+            and full-stack product engineering with a focus on performance, reliability, and
+            measurable outcomes.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--stacked experience-timeline">
+          <article class="experience-card glass fade-in fade-in-delay-1">
+            <div class="card-head">
+              <div>
+                <h3>Teaching Associate</h3>
+                <p class="card-subtitle">California State University, Fullerton</p>
+              </div>
+              <div class="card-meta">
+                <p>California, USA</p>
+                <p>Aug 2025 - Present</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Responsible for holding office hours and conducting lab sessions for CPSC 223P: Python Programming.
+              </li>
+              <li>
+                Built a CI/CD pipeline with automated unit testing and pull-request-based workflows,
+                reducing manual grading time by 80%.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card glass fade-in fade-in-delay-2">
+            <div class="card-head">
+              <div>
+                <h3>Research Assistant</h3>
+                <p class="card-subtitle">California State University, Fullerton</p>
+              </div>
+              <div class="card-meta">
+                <p>California, USA</p>
+                <p>Jun 2025 - Present</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Engineered a PyTorch computer vision pipeline for 5-class diabetic retinopathy
+                classification using ResNet-50 with two-phase fine-tuning.
+              </li>
+              <li>
+                Achieved 91% accuracy and QWK 0.9167, and used Grad-CAM to guide error analysis.
+              </li>
+              <li>
+                Introduced object-aware Neural Style Transfer with a curated style bank to reduce
+                overfitting and domain shift, targeting improved QWK and &gt;95% accuracy.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card glass fade-in fade-in-delay-3">
+            <div class="card-head">
+              <div>
+                <h3>Software Engineering Intern</h3>
+                <p class="card-subtitle">Digital Product School by UnternehmerTUM</p>
+              </div>
+              <div class="card-meta">
+                <p>Munich, Germany</p>
+                <p>May 2023 - Jul 2023</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Developed a backend API using Java (Spring Boot), PostgreSQL, and AWS App Runner.
+              </li>
+              <li>
+                Implemented indexing, table partitioning, and asynchronous processing for stable
+                performance under heavy traffic.
+              </li>
+              <li>
+                Improved a scikit-learn anomaly detection pipeline by 15% through feature
+                engineering and radar sensor data collection in Python.
+              </li>
+            </ul>
+          </article>
+
+          <article class="experience-card glass fade-in">
+            <div class="card-head">
+              <div>
+                <h3>Full-stack Developer Intern</h3>
+                <p class="card-subtitle">Mezchip</p>
+              </div>
+              <div class="card-meta">
+                <p>Bengaluru, India</p>
+                <p>Jul 2022 - Oct 2022</p>
+              </div>
+            </div>
+            <ul>
+              <li>
+                Built a real-time chatbot using Flask, Preact, and PostgreSQL, serving 1,000+ users, achieving sub-200ms
+                response times and
+                decreasing login failures by 3% after implementing JWT-based authentication.
+              </li>
+              <li>
+                Optimized package dependencies to reduce the chatbot's bundle size by 15% and implemented 8 secure
+                RESTful APIs with
+                OAuth2 authentication, rate limiting, and input validation to enhance performance and security. </li>
+              <li>
+                Implemented a debounced autocomplete search feature, reducing API calls by 40% and improving search
+                responsiveness.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects" aria-labelledby="projectsTitle">
+      <div class="container">
+        <div class="section-header fade-in">
+          <p class="eyebrow">Projects</p>
+          <h2 id="projectsTitle">Selected work</h2>
+          <p>
+            A mix of LLM tooling, cloud-native RAG systems, developer infrastructure, and real-time
+            communication experiments built for practical use and clear engineering tradeoffs.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--projects">
+          <article class="project-card glass fade-in fade-in-delay-1">
+            <div class="project-card__top">
+              <h3>SafePrompt</h3>
+              <p>
+                Fine-tuned an LLM with QLoRA for specialized PII redaction, producing lightweight
+                LoRA adapters that generate structured placeholder-based redactions.
+              </p>
+            </div>
+            <ul class="project-highlights">
+              <li>Micro-F1 around 90% with span-level evaluation pipeline</li>
+              <li>CPU-only FastAPI service for offline inference on commodity hardware</li>
+            </ul>
+            <div class="tech-list" aria-label="Technologies used">
+              <span>QLoRA</span>
+              <span>Llama 3.2</span>
+              <span>FastAPI</span>
+              <span>Web Extension</span>
+              <span>Hugging Face</span>
+            </div>
+            <div class="project-links" aria-label="Project links">
+              <a href="https://huggingface.co/chinu-codes/llama-3.2-3b-pii-redactor-lora" class="icon-link"
+                target="_blank" rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="7"></circle>
+                    <path d="M9.2 10.5h.01M14.8 10.5h.01"></path>
+                    <path d="M8.8 13.6c.9 1.1 2 1.6 3.2 1.6s2.3-.5 3.2-1.6"></path>
+                    <path d="M7.1 12.5c-.9-.2-1.6.3-1.9 1.1M16.9 12.5c.9-.2 1.6.3 1.9 1.1"></path>
+                  </svg>
+                </span>
+                Model Adapter
+              </a>
+              <a href="https://github.com/vishal-codes/SafePrompt" class="icon-link" target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.08 3.29 9.38 7.85 10.9.57.11.77-.25.77-.55 0-.27-.01-.99-.02-1.94-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.76 1.2 1.76 1.2 1.03 1.77 2.71 1.26 3.38.96.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.58.23 2.75.11 3.04.74.81 1.19 1.85 1.19 3.11 0 4.45-2.69 5.41-5.25 5.7.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.67.78.55a11.52 11.52 0 0 0 7.84-10.9C23.5 5.66 18.34.5 12 .5Z" />
+                  </svg>
+                </span>
+                Repository
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass fade-in fade-in-delay-2">
+            <div class="project-card__top">
+              <h3>CourseHero</h3>
+              <p>
+                Built and deployed a Python RAG API on Cloudflare Workers using Workers AI and
+                Vectorize, with a validated JSON contract and safe rollout workflows.
+              </p>
+            </div>
+            <ul class="project-highlights">
+              <li>Deterministic ingestion pipeline from CSV to strict NDJSON metadata</li>
+              <li>Rate limiting, observability, and staging/production wrangler environments</li>
+            </ul>
+            <div class="tech-list" aria-label="Technologies used">
+              <span>RAG</span>
+              <span>Llama 3.1</span>
+              <span>Cloudflare Workers</span>
+              <span>Vectorize</span>
+              <span>Workers AI</span>
+            </div>
+            <div class="project-links" aria-label="Project links">
+              <a href="https://course-hero.vishal-codes.workers.dev/" class="icon-link" target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M14 3h7v7" />
+                    <path d="M10 14 21 3" />
+                    <path d="M21 14v7H3V3h7" />
+                  </svg>
+                </span>
+                Try
+              </a>
+              <a href="https://github.com/vishal-codes/course-hero-rag-bot" class="icon-link" target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.08 3.29 9.38 7.85 10.9.57.11.77-.25.77-.55 0-.27-.01-.99-.02-1.94-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.76 1.2 1.76 1.2 1.03 1.77 2.71 1.26 3.38.96.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.58.23 2.75.11 3.04.74.81 1.19 1.85 1.19 3.11 0 4.45-2.69 5.41-5.25 5.7.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.67.78.55a11.52 11.52 0 0 0 7.84-10.9C23.5 5.66 18.34.5 12 .5Z" />
+                  </svg>
+                </span>
+                Repository
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass fade-in fade-in-delay-3">
+            <div class="project-card__top">
+              <h3>DBsnap</h3>
+              <p>
+                Developed a unified backup and restore platform for four database engines behind a
+                single CLI, packaged in a containerized runtime for portable execution.
+              </p>
+            </div>
+            <ul class="project-highlights">
+              <li>AWS S3 cloud backup workflow with direct restore options</li>
+              <li>Engine-agnostic CLI abstractions for developer and server environments</li>
+            </ul>
+            <div class="tech-list" aria-label="Technologies used">
+              <span>Python CLI</span>
+              <span>Docker</span>
+              <span>AWS S3</span>
+              <span>Boto3</span>
+            </div>
+            <div class="project-links" aria-label="Project links">
+              <a href="https://hub.docker.com/r/chinu1710/db-backup-cli" class="icon-link" target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <rect x="5" y="9" width="3" height="3" rx=".4"></rect>
+                    <rect x="8.5" y="9" width="3" height="3" rx=".4"></rect>
+                    <rect x="12" y="9" width="3" height="3" rx=".4"></rect>
+                    <rect x="8.5" y="5.5" width="3" height="3" rx=".4"></rect>
+                    <rect x="12" y="5.5" width="3" height="3" rx=".4"></rect>
+                    <path
+                      d="M3 13.7h10.2c1.9 0 2.9-.6 3.5-1.7.7.1 1.3 0 1.8-.5.2.9-.1 2.3-.8 3.4-1.1 1.8-2.8 2.6-5.2 2.6H8.8c-2.5 0-4.4-1.4-5-3.8z">
+                    </path>
+                    <path d="M18.9 10.5c.5-.7 1.3-.9 2.1-.7-.1.7-.6 1.4-1.5 1.7"></path>
+                  </svg>
+                </span>
+                Docker Image
+              </a>
+              <a href="https://github.com/vishal-codes/dbsnap" class="icon-link" target="_blank"
+                rel="noopener noreferrer">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.08 3.29 9.38 7.85 10.9.57.11.77-.25.77-.55 0-.27-.01-.99-.02-1.94-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.76 1.2 1.76 1.2 1.03 1.77 2.71 1.26 3.38.96.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.58.23 2.75.11 3.04.74.81 1.19 1.85 1.19 3.11 0 4.45-2.69 5.41-5.25 5.7.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.67.78.55a11.52 11.52 0 0 0 7.84-10.9C23.5 5.66 18.34.5 12 .5Z" />
+                  </svg>
+                </span>
+                Request GitHub
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass fade-in">
+            <div class="project-card__top">
+              <h3>Learn WebRTC</h3>
+              <p>
+                Built a full-stack WebRTC playground with custom signaling for real-time video,
+                audio, and data channel communication, plus an interactive debugging assistant.
+              </p>
+            </div>
+            <ul class="project-highlights">
+              <li>Custom Node.js / Socket.io signaling server and RTCPeerConnection flows</li>
+              <li>Gemini-powered debugging assistant for SDP, signaling, and ICE analysis</li>
+            </ul>
+            <div class="tech-list" aria-label="Technologies used">
+              <span>TypeScript</span>
+              <span>WebRTC</span>
+              <span>Next.js</span>
+              <span>Socket.io</span>
+              <span>Google Gemini</span>
+            </div>
+            <div class="project-links" aria-label="Project links">
+              <a href="https://learn-web-rtc.vercel.app/" class="icon-link">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"
+                    stroke-linejoin="round">
+                    <path d="M14 3h7v7" />
+                    <path d="M10 14 21 3" />
+                    <path d="M21 14v7H3V3h7" />
+                  </svg>
+                </span>
+                Try
+              </a>
+              <a href="https://github.com/vishal-codes/learn-WebRTC" class="icon-link">
+                <span aria-hidden="true">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path
+                      d="M12 .5C5.65.5.5 5.66.5 12.02c0 5.08 3.29 9.38 7.85 10.9.57.11.77-.25.77-.55 0-.27-.01-.99-.02-1.94-3.19.69-3.87-1.54-3.87-1.54-.52-1.33-1.28-1.68-1.28-1.68-1.05-.72.08-.71.08-.71 1.16.08 1.76 1.2 1.76 1.2 1.03 1.77 2.71 1.26 3.38.96.1-.75.4-1.27.73-1.56-2.55-.29-5.23-1.28-5.23-5.71 0-1.26.45-2.3 1.19-3.11-.12-.29-.52-1.46.11-3.04 0 0 .97-.31 3.17 1.19a10.98 10.98 0 0 1 5.77 0c2.2-1.5 3.17-1.19 3.17-1.19.63 1.58.23 2.75.11 3.04.74.81 1.19 1.85 1.19 3.11 0 4.45-2.69 5.41-5.25 5.7.41.36.78 1.08.78 2.18 0 1.57-.01 2.84-.01 3.23 0 .3.2.67.78.55a11.52 11.52 0 0 0 7.84-10.9C23.5 5.66 18.34.5 12 .5Z" />
+                  </svg>
+                </span>
+                Repository
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-footer fade-in">
+          <a class="btn btn--ghost" href="https://github.com/vishal-codes#:~:text=Pinned,Loading" target="_blank"
+            rel="noopener noreferrer">
+            View More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contactTitle">
+      <div class="container contact-layout">
+        <div class="contact-panel glass fade-in">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contactTitle">Let’s build something useful</h2>
+          <p>
+            I’m open to Applied AI and backend internship opportunities. Reach out for
+            collaboration, internships, or full-time roles.
+          </p>
+          <br />
+
+          <ul class="contact-list" role="list">
+            <a href="mailto:itsvishal2417@gmail.com">
+              <li>
+                <span>Email</span>
+                <span> itsvishal2417@gmail.com</span>
+              </li>
+            </a>
+            <a href="https://www.linkedin.com/in/vishal-shinde-/" target="_blank" rel="noopener noreferrer">
+              <li>
+                <span>LinkedIn</span>
+                linkedin.com/in/vishal-shinde-/
+
+              </li>
+            </a>
+            <a href="https://github.com/vishal-codes" target="_blank" rel="noopener noreferrer">
+              <li>
+                <span>GitHub</span>
+                github.com/vishal-codes
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container site-footer__inner">
+      <p>© <span id="currentYear"></span> Vishal Vilas Shinde</p>
+      <a href="#home">Back to top</a>
+    </div>
+  </footer>
+</body>
+
 </html>
