@@ -183,11 +183,16 @@ function initActiveNavLinks() {
     });
   };
 
+  const header = document.querySelector('.site-header');
+  let cachedHeaderOffset = header ? header.offsetHeight : 0;
+  window.addEventListener('resize', () => {
+    cachedHeaderOffset = header ? header.offsetHeight : 0;
+  });
+
   let ticking = false;
 
   const updateActive = () => {
-    const header = document.querySelector('.site-header');
-    const headerOffset = header ? header.offsetHeight : 0;
+    const headerOffset = cachedHeaderOffset;
     const marker = window.scrollY + headerOffset + window.innerHeight * 0.22;
 
     let current = sections[0];

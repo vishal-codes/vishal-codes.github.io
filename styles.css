@@ -1,3 +1,22 @@
+/* Size-adjusted fallbacks to reduce CLS from font swap */
+@font-face {
+  font-family: 'DM Sans Fallback';
+  src: local('Arial');
+  size-adjust: 96.2%;
+  ascent-override: 100%;
+  descent-override: 25%;
+  line-gap-override: 0%;
+}
+
+@font-face {
+  font-family: 'Syne Fallback';
+  src: local('Arial Black');
+  size-adjust: 90%;
+  ascent-override: 105%;
+  descent-override: 30%;
+  line-gap-override: 0%;
+}
+
 /* =========================
    Theme Tokens
    ========================= */
@@ -31,8 +50,8 @@
   --nav-height: 74px;
   --transition: 220ms ease;
   --transition-slow: 420ms cubic-bezier(0.2, 0.7, 0.2, 1);
-  --font-display: 'Syne', sans-serif;
-  --font-body: 'DM Sans', sans-serif;
+  --font-display: 'Syne', 'Syne Fallback', sans-serif;
+  --font-body: 'DM Sans', 'DM Sans Fallback', sans-serif;
   --font-mono: 'DM Mono', monospace;
 }
 
@@ -450,9 +469,7 @@ section {
   transition:
     max-height var(--transition-slow),
     opacity var(--transition),
-    transform var(--transition),
-    border-color var(--transition),
-    box-shadow var(--transition);
+    transform var(--transition);
 }
 
 .mobile-nav.open {
@@ -576,12 +593,7 @@ section {
   border: 1px solid transparent;
   font-weight: 700;
   line-height: 1;
-  transition:
-    transform var(--transition),
-    box-shadow var(--transition),
-    background-color var(--transition),
-    color var(--transition),
-    border-color var(--transition);
+  transition: transform var(--transition), opacity var(--transition);
   position: relative;
   overflow: hidden;
 }
@@ -642,7 +654,7 @@ section {
   color: var(--heading);
   font-weight: 600;
   font-size: 0.92rem;
-  transition: border-color var(--transition), background-color var(--transition), transform var(--transition);
+  transition: transform var(--transition);
 }
 
 .icon-link span {
@@ -792,13 +804,13 @@ section {
 .load-time__hand-min {
   transform-origin: 12px 12px;
   transform: rotate(90deg);
-  animation: clock-hour 3.5s ease-in-out forwards;
+  animation: clock-hour 2s ease-in-out forwards;
 }
 
 .load-time__hand-sec {
   transform-origin: 12px 12px;
   transform: rotate(-90deg);
-  animation: clock-minute 3.5s ease-in-out forwards;
+  animation: clock-minute 2s ease-in-out forwards;
 }
 
 @keyframes clock-hour {
@@ -889,7 +901,7 @@ section {
 .project-card,
 .contact-panel {
   border-radius: var(--radius-lg);
-  transition: transform var(--transition-slow), box-shadow var(--transition-slow), border-color var(--transition);
+  transition: transform var(--transition-slow);
 }
 
 .hero__content,
