@@ -214,6 +214,22 @@ function initActiveNavLinks() {
   onScroll();
 }
 
+function initLoadTime() {
+  const el = document.getElementById('loadTime');
+  const valueEl = document.getElementById('loadTimeValue');
+  if (!el || !valueEl) return;
+
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      const perf = performance.getEntriesByType('navigation')[0];
+      const ms = perf ? Math.round(perf.loadEventEnd - perf.startTime) : Math.round(performance.now());
+
+      valueEl.textContent = ms < 1000 ? `${ms}ms` : `${(ms / 1000).toFixed(2)}s`;
+      el.classList.add('visible');
+    }, 0);
+  });
+}
+
 function initYear() {
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
@@ -227,6 +243,7 @@ function init() {
   initRevealAnimations();
   initScrollProgress();
   initActiveNavLinks();
+  initLoadTime();
   initYear();
 }
 

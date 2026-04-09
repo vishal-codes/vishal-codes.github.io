@@ -33,7 +33,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700;800&family=Syne:wght@500;600;700;800&display=swap"
     rel="stylesheet" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preload" href="./styles.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="./styles.css" /></noscript>
   <script src="./script.js" defer></script>
 </head>
 
@@ -123,7 +124,16 @@
             <a class="btn btn--primary"
               href="mailto:itsvishal2417@gmail.com?subject=Resume%20Request&body=Hi%20Vishal%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20love%20to%20see%20your%20resume.%0A%0AReason%20(optional)%3A%20%0A%0AThank%20you!"
               title="Opens your email client — I'll share my resume personally">Request Resume</a>
-            <a class="btn btn--ghost" href="#contact">View Projects</a>
+            <a class="btn btn--ghost" href="#projects">View Projects</a>
+          </div>
+
+          <div class="load-time" id="loadTime" aria-label="Page load time">
+            <svg class="load-time__clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <circle cx="12" cy="12" r="10" />
+              <line class="load-time__hand-min" x1="12" y1="12" x2="12" y2="6" />
+              <line class="load-time__hand-sec" x1="12" y1="12" x2="16" y2="12" />
+            </svg>
+            <span class="load-time__text">Page loaded in <strong id="loadTimeValue">...</strong></span>
           </div>
         </div>
 
@@ -368,7 +378,7 @@
                 Model Adapter
               </a>
               <a href="https://github.com/vishal-codes/SafePrompt" class="icon-link" target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer" aria-label="SafePrompt GitHub repository">
                 <span aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
@@ -413,7 +423,7 @@
                 Try
               </a>
               <a href="https://github.com/vishal-codes/course-hero-rag-bot" class="icon-link" target="_blank"
-                rel="noopener noreferrer">
+                rel="noopener noreferrer" aria-label="AskCourse GitHub repository">
                 <span aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
@@ -458,7 +468,7 @@
                 </span>
                 Try
               </a>
-              <a href="https://github.com/vishal-codes/learn-WebRTC" class="icon-link">
+              <a href="https://github.com/vishal-codes/learn-WebRTC" class="icon-link" aria-label="Learn WebRTC GitHub repository">
                 <span aria-hidden="true">
                   <svg viewBox="0 0 24 24" fill="currentColor">
                     <path
@@ -492,25 +502,24 @@
           <br />
 
           <ul class="contact-list" role="list">
-            <a href="mailto:itsvishal2417@gmail.com">
-              <li>
+            <li>
+              <a href="mailto:itsvishal2417@gmail.com">
                 <span>Email</span>
-                <span> itsvishal2417@gmail.com</span>
-              </li>
-            </a>
-            <a href="https://www.linkedin.com/in/vishal-shinde-/" target="_blank" rel="noopener noreferrer">
-              <li>
+                <span>itsvishal2417@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/vishal-shinde-/" target="_blank" rel="noopener noreferrer">
                 <span>LinkedIn</span>
                 linkedin.com/in/vishal-shinde-/
-
-              </li>
-            </a>
-            <a href="https://github.com/vishal-codes" target="_blank" rel="noopener noreferrer">
-              <li>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/vishal-codes" target="_blank" rel="noopener noreferrer">
                 <span>GitHub</span>
                 github.com/vishal-codes
-              </li>
-            </a>
+              </a>
+            </li>
           </ul>
         </div>
       </div>
